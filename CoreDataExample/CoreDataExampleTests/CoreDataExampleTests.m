@@ -27,7 +27,7 @@
 - (void)testExample
 {
     //STFail(@"Unit tests Example");
-    STAssertTrue(YES, @"");
+    STAssertTrue(YES, @"OK");
 }
 
 @end
