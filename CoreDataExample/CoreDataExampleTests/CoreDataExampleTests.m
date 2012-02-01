@@ -7,6 +7,8 @@
 //
 
 #import "CoreDataExampleTests.h"
+#import "Genre.h"
+#import "NSFetchedResultsController+Util.h"
 
 @implementation CoreDataExampleTests
 
@@ -28,6 +30,9 @@
 {
     //STFail(@"Unit tests Example");
     STAssertTrue(YES, @"OK");
+}
+
+-(void)testGenre {
 }
 
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GenreDelegate.h"
 
-@interface GenreListViewController : UITableViewController
+@interface GenreListViewController : UITableViewController <GenreDelegate,NSFetchedResultsControllerDelegate>
+
+
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSManagedObjectContext *addingManagedObjectContext;
 
 @end

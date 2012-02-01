@@ -7,25 +7,24 @@
 //
 
 #import "CDEAppDelegate.h"
-#import "HomeViewController.h"
 
 @implementation CDEAppDelegate
 
 @synthesize window = _window;
+@synthesize tabBarController;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.window.backgroundColor = [UIColor whiteColor];
     
+    //HomeViewController *home = [[HomeViewController alloc] init];
+    //self.window.rootViewController = home;
     
-    HomeViewController *home = [[HomeViewController alloc] init];
-    self.window.rootViewController = home;
-    
+    [self.window addSubview:self.tabBarController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

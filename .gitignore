@@ -1,0 +1,13 @@
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspectivev3
+.DS_Store
+*.tm_build_errors
+*.swp
+*~.nib
+.gitattributes
+GHUnit.docset
+*.xcuserdatad
+xcuserdata
+

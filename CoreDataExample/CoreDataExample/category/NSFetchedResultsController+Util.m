@@ -7,7 +7,19 @@
 //
 
 #import "NSFetchedResultsController+Util.h"
+#import "Genre.h"
 
 @implementation NSFetchedResultsController (Util)
+
+-(BOOL)existGenre:(Genre *)g {
+
+    for (Genre *genre in self.fetchedObjects) {
+
+        if ([genre.name isEqualToString: g.name]) {
+            return YES;
+        }
+    }
+    return NO;
+}
 
 @end

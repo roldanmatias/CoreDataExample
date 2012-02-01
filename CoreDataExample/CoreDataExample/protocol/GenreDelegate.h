@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Genre.h"
 
 @protocol GenreDelegate <NSObject>
+
+-(void) saveGenre; 
+-(void) cancelGenre;
+-(BOOL) existGenre:(Genre *)g;
 
 @end

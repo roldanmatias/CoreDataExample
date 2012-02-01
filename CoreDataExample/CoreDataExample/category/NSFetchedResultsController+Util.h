@@ -7,7 +7,10 @@
 //
 
 #import <CoreData/CoreData.h>
+#import "Genre.h"
 
 @interface NSFetchedResultsController (Util)
+
+-(BOOL)existGenre:(Genre *)g;
 
 @end

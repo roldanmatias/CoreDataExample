@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GenreViewController : UIViewController
+@interface GenreViewController : UIViewController <UINavigationControllerDelegate>
+
+@property(strong, nonatomic) IBOutlet UINavigationController *navigationController;
 
 @end
