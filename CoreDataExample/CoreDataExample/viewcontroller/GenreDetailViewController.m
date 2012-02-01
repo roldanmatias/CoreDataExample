@@ -1,14 +1,14 @@
 //
-//  HomeViewController.m
+//  GenreDetailViewController.m
 //  CoreDataExample
 //
-//  Created by Matias Roldan on 1/20/12.
+//  Created by Matias Roldan on 1/26/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "GenreDetailViewController.h"
 
-@implementation HomeViewController
+@implementation GenreDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
