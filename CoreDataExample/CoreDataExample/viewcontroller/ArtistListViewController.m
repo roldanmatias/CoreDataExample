@@ -104,16 +104,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -124,8 +124,12 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+
+    cell.textLabel.text = @"Hernan Cattaneo";
     
-    // Configure the cell...
+    NSURL *url = [NSURL URLWithString:@"http://pulseradio.net/media/filter/42x42/transfer/img/profileimage/2011-06/hernan_cattaneo.jpg"];
+    NSData * imageData = [[NSData alloc] initWithContentsOfURL: url];
+    cell.imageView.image = [UIImage imageWithData: imageData];
     
     return cell;
 }
