@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ArtistDelegate.h"
 
-@interface ArtistListViewController : UITableViewController
+@interface ArtistListViewController : UITableViewController <ArtistDelegate, NSFetchedResultsControllerDelegate>
+
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSManagedObjectContext *addingManagedObjectContext;
 
 @end

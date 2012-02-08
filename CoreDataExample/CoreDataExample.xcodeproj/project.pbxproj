@@ -38,6 +38,7 @@
 		E0AE018714E2BF8D0095F9DF /* ArtistListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AE018514E2BF8D0095F9DF /* ArtistListViewController.xib */; };
 		E0AE018B14E2C17A0095F9DF /* ArtistEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE018914E2C1790095F9DF /* ArtistEditViewController.m */; };
 		E0AE018C14E2C17A0095F9DF /* ArtistEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AE018A14E2C1790095F9DF /* ArtistEditViewController.xib */; };
+		E0AE01B114E2D0890095F9DF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE01B014E2D0890095F9DF /* Artist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,9 @@
 		E0AE018814E2C1790095F9DF /* ArtistEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistEditViewController.h; path = viewcontroller/ArtistEditViewController.h; sourceTree = "<group>"; };
 		E0AE018914E2C1790095F9DF /* ArtistEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistEditViewController.m; path = viewcontroller/ArtistEditViewController.m; sourceTree = "<group>"; };
 		E0AE018A14E2C1790095F9DF /* ArtistEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistEditViewController.xib; path = viewcontroller/ArtistEditViewController.xib; sourceTree = "<group>"; };
+		E0AE01A514E2C9370095F9DF /* ArtistDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistDelegate.h; path = protocol/ArtistDelegate.h; sourceTree = "<group>"; };
+		E0AE01AF14E2D0880095F9DF /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Artist.h; path = model/Artist.h; sourceTree = "<group>"; };
+		E0AE01B014E2D0890095F9DF /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Artist.m; path = model/Artist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,8 @@
 		E07A3D6914D19FD800415FBB /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E0AE01AF14E2D0880095F9DF /* Artist.h */,
+				E0AE01B014E2D0890095F9DF /* Artist.m */,
 				E04839A714E174E300F00651 /* Genre.h */,
 				E04839A814E174E300F00651 /* Genre.m */,
 			);
@@ -199,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				E07A3D9214D1DED500415FBB /* GenreDelegate.h */,
+				E0AE01A514E2C9370095F9DF /* ArtistDelegate.h */,
 			);
 			name = protocol;
 			sourceTree = "<group>";
@@ -404,6 +411,7 @@
 				E0AE018014E2BE230095F9DF /* ArtistViewController.m in Sources */,
 				E0AE018614E2BF8D0095F9DF /* ArtistListViewController.m in Sources */,
 				E0AE018B14E2C17A0095F9DF /* ArtistEditViewController.m in Sources */,
+				E0AE01B114E2D0890095F9DF /* Artist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

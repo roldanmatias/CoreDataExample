@@ -17,6 +17,8 @@
 
 @implementation ArtistEditViewController
 
+@synthesize artist, delegate, isEditMode;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -80,6 +82,12 @@
 
 -(void) save {
 
+    self.artist.name = @"";
+    
+    NSURL *url = [NSURL URLWithString:@"http://pulseradio.net/media/filter/42x42/transfer/img/profileimage/2011-06/hernan_cattaneo.jpg"];
+    NSData * imageData = [[NSData alloc] initWithContentsOfURL: url];
+    self.artist.imgData = imageData;
+   
     [self.navigationController popViewControllerAnimated:YES];
 
 }
