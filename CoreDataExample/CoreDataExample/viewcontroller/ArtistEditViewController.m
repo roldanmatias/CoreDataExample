@@ -16,6 +16,9 @@
 @end
 
 @implementation ArtistEditViewController
+@synthesize txtName;
+@synthesize txtImageUrl;
+@synthesize txtWikiUrl;
 
 @synthesize artist, delegate, isEditMode;
 
@@ -62,6 +65,9 @@
 
 - (void)viewDidUnload
 {
+    [self setTxtName:nil];
+    [self setTxtImageUrl:nil];
+    [self setTxtWikiUrl:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -82,14 +88,27 @@
 
 -(void) save {
 
-    self.artist.name = @"";
-    
-    NSURL *url = [NSURL URLWithString:@"http://pulseradio.net/media/filter/42x42/transfer/img/profileimage/2011-06/hernan_cattaneo.jpg"];
-    NSData * imageData = [[NSData alloc] initWithContentsOfURL: url];
-    self.artist.imgData = imageData;
-   
-    [self.navigationController popViewControllerAnimated:YES];
+    if (self.txtName.text.length == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Artist" 
+                                                        message:@"Add an Artist name"
+													   delegate:nil 
+                                              cancelButtonTitle:@"Ok" 
+                                              otherButtonTitles:nil];
+        [alert show];
+    } else {
+        
+        self.artist.name = self.txtName.text;
+        self.artist.wikiURL = self.txtWikiUrl.text;
+        
+        if (self.txtImageUrl.text.length > 0) {
+            NSURL *url = [NSURL URLWithString:self.txtImageUrl.text];
+            NSData * imageData = [[NSData alloc] initWithContentsOfURL: url];
+            self.artist.imgData = imageData;
+        }
 
+        [self.delegate saveArtist];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 @end

@@ -16,5 +16,8 @@
 @property (strong, nonatomic) id<ArtistDelegate> delegate;
 @property (nonatomic) BOOL isEditMode;
 
+@property (weak, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UITextField *txtImageUrl;
+@property (weak, nonatomic) IBOutlet UITextField *txtWikiUrl;
 
 @end

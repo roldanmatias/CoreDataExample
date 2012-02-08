@@ -39,6 +39,8 @@
 		E0AE018B14E2C17A0095F9DF /* ArtistEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE018914E2C1790095F9DF /* ArtistEditViewController.m */; };
 		E0AE018C14E2C17A0095F9DF /* ArtistEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AE018A14E2C1790095F9DF /* ArtistEditViewController.xib */; };
 		E0AE01B114E2D0890095F9DF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE01B014E2D0890095F9DF /* Artist.m */; };
+		E0AE01B514E2DCCA0095F9DF /* ArtistInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE01B314E2DCC80095F9DF /* ArtistInfoViewController.m */; };
+		E0AE01B614E2DCCA0095F9DF /* ArtistInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AE01B414E2DCC90095F9DF /* ArtistInfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,9 @@
 		E0AE01A514E2C9370095F9DF /* ArtistDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistDelegate.h; path = protocol/ArtistDelegate.h; sourceTree = "<group>"; };
 		E0AE01AF14E2D0880095F9DF /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Artist.h; path = model/Artist.h; sourceTree = "<group>"; };
 		E0AE01B014E2D0890095F9DF /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Artist.m; path = model/Artist.m; sourceTree = "<group>"; };
+		E0AE01B214E2DCC70095F9DF /* ArtistInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistInfoViewController.h; path = viewcontroller/ArtistInfoViewController.h; sourceTree = "<group>"; };
+		E0AE01B314E2DCC80095F9DF /* ArtistInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistInfoViewController.m; path = viewcontroller/ArtistInfoViewController.m; sourceTree = "<group>"; };
+		E0AE01B414E2DCC90095F9DF /* ArtistInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistInfoViewController.xib; path = viewcontroller/ArtistInfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +168,8 @@
 				E0AE018414E2BF8C0095F9DF /* ArtistListViewController.m */,
 				E0AE018814E2C1790095F9DF /* ArtistEditViewController.h */,
 				E0AE018914E2C1790095F9DF /* ArtistEditViewController.m */,
+				E0AE01B214E2DCC70095F9DF /* ArtistInfoViewController.h */,
+				E0AE01B314E2DCC80095F9DF /* ArtistInfoViewController.m */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 				E0AE017F14E2BE230095F9DF /* ArtistViewController.xib */,
 				E0AE018514E2BF8D0095F9DF /* ArtistListViewController.xib */,
 				E0AE018A14E2C1790095F9DF /* ArtistEditViewController.xib */,
+				E0AE01B414E2DCC90095F9DF /* ArtistInfoViewController.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -365,6 +373,7 @@
 				E0AE018114E2BE230095F9DF /* ArtistViewController.xib in Resources */,
 				E0AE018714E2BF8D0095F9DF /* ArtistListViewController.xib in Resources */,
 				E0AE018C14E2C17A0095F9DF /* ArtistEditViewController.xib in Resources */,
+				E0AE01B614E2DCCA0095F9DF /* ArtistInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +421,7 @@
 				E0AE018614E2BF8D0095F9DF /* ArtistListViewController.m in Sources */,
 				E0AE018B14E2C17A0095F9DF /* ArtistEditViewController.m in Sources */,
 				E0AE01B114E2D0890095F9DF /* Artist.m in Sources */,
+				E0AE01B514E2DCCA0095F9DF /* ArtistInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
