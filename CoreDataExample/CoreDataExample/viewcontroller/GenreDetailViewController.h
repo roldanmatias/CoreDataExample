@@ -16,5 +16,6 @@
 @property (strong, nonatomic) id<GenreDelegate> delegate;
 @property (nonatomic) BOOL isEditMode;
 @property (strong, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UITextField *txtWikiURL;
 
 @end

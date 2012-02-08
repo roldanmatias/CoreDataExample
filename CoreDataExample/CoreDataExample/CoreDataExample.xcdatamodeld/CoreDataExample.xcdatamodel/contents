@@ -14,6 +14,7 @@
     <entity name="Genre" representedClassName="Genre" syncable="YES">
         <attribute name="genreID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wikiURL" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Track" syncable="YES">
         <attribute name="bpm" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -22,9 +23,9 @@
         <attribute name="trackID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Genre" positionX="79" positionY="0" width="128" height="75"/>
-        <element name="Artist" positionX="79" positionY="99" width="128" height="90"/>
         <element name="Album" positionX="79" positionY="189" width="128" height="105"/>
+        <element name="Artist" positionX="79" positionY="99" width="128" height="90"/>
+        <element name="Genre" positionX="79" positionY="0" width="128" height="90"/>
         <element name="Track" positionX="81" positionY="279" width="128" height="105"/>
     </elements>
 </model>

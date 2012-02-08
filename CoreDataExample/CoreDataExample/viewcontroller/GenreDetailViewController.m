@@ -19,6 +19,7 @@
 @implementation GenreDetailViewController
 
 @synthesize txtName;
+@synthesize txtWikiURL;
 @synthesize isEditMode;
 @synthesize delegate;
 @synthesize genre;
@@ -61,10 +62,18 @@
                                      action:@selector(save)];
     
     self.navigationItem.rightBarButtonItem = okButton;
+    
+    
+    if (self.isEditMode) {
+        self.txtName.text = self.genre.name;
+        self.txtWikiURL.text = self.genre.wikiURL;
+    }
+    
 }
 
 - (void)viewDidUnload
 {
+    [self setTxtWikiURL:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -86,8 +95,16 @@
 
 -(void) save {
     self.genre.name = self.txtName.text;
+    self.genre.wikiURL = self.txtWikiURL.text;
     
-    if ([self.delegate existGenre:self.genre]) {
+    if (self.txtName.text.length == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Genre" 
+                                                        message:@"Add a Genre name"
+													   delegate:nil 
+                                              cancelButtonTitle:@"Ok" 
+                                              otherButtonTitles:nil];
+        [alert show];
+    } else if (!self.isEditMode && [self.delegate existGenre:self.genre]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Genre" 
                                                         message:@"Genre already exists"
 													   delegate:nil 

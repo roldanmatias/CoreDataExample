@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E0281EDD14D99EE000E208EC /* NSFetchedResultsController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E0281EDC14D99EE000E208EC /* NSFetchedResultsController+Util.m */; };
-		E07A3D6C14D1B41000415FBB /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = E07A3D6B14D1B41000415FBB /* Genre.m */; };
+		E04839A914E174E300F00651 /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = E04839A814E174E300F00651 /* Genre.m */; };
+		E04839AD14E1767500F00651 /* GenreInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04839AB14E1767500F00651 /* GenreInfoViewController.m */; };
+		E04839AE14E1767500F00651 /* GenreInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E04839AC14E1767500F00651 /* GenreInfoViewController.xib */; };
 		E07A3D6F14D1B5BC00415FBB /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07A3D6E14D1B5BC00415FBB /* Window.xib */; };
 		E07A3D8514D1CA4000415FBB /* GenreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E07A3D8314D1CA4000415FBB /* GenreListViewController.m */; };
 		E07A3D8614D1CA4000415FBB /* GenreListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07A3D8414D1CA4000415FBB /* GenreListViewController.xib */; };
@@ -45,8 +47,11 @@
 /* Begin PBXFileReference section */
 		E0281EDB14D99EE000E208EC /* NSFetchedResultsController+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFetchedResultsController+Util.h"; path = "category/NSFetchedResultsController+Util.h"; sourceTree = "<group>"; };
 		E0281EDC14D99EE000E208EC /* NSFetchedResultsController+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFetchedResultsController+Util.m"; path = "category/NSFetchedResultsController+Util.m"; sourceTree = "<group>"; };
-		E07A3D6A14D1B41000415FBB /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genre.h; path = model/Genre.h; sourceTree = "<group>"; };
-		E07A3D6B14D1B41000415FBB /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Genre.m; path = model/Genre.m; sourceTree = "<group>"; };
+		E04839A714E174E300F00651 /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genre.h; path = model/Genre.h; sourceTree = "<group>"; };
+		E04839A814E174E300F00651 /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Genre.m; path = model/Genre.m; sourceTree = "<group>"; };
+		E04839AA14E1767500F00651 /* GenreInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenreInfoViewController.h; path = viewcontroller/GenreInfoViewController.h; sourceTree = "<group>"; };
+		E04839AB14E1767500F00651 /* GenreInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenreInfoViewController.m; path = viewcontroller/GenreInfoViewController.m; sourceTree = "<group>"; };
+		E04839AC14E1767500F00651 /* GenreInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GenreInfoViewController.xib; path = viewcontroller/GenreInfoViewController.xib; sourceTree = "<group>"; };
 		E07A3D6E14D1B5BC00415FBB /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Window.xib; path = view/Window.xib; sourceTree = "<group>"; };
 		E07A3D8214D1CA4000415FBB /* GenreListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenreListViewController.h; path = viewcontroller/GenreListViewController.h; sourceTree = "<group>"; };
 		E07A3D8314D1CA4000415FBB /* GenreListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenreListViewController.m; path = viewcontroller/GenreListViewController.m; sourceTree = "<group>"; };
@@ -131,6 +136,8 @@
 				E07A3D8314D1CA4000415FBB /* GenreListViewController.m */,
 				E07A3D8C14D1D5FF00415FBB /* GenreDetailViewController.h */,
 				E07A3D8D14D1D5FF00415FBB /* GenreDetailViewController.m */,
+				E04839AA14E1767500F00651 /* GenreInfoViewController.h */,
+				E04839AB14E1767500F00651 /* GenreInfoViewController.m */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -146,8 +153,8 @@
 		E07A3D6914D19FD800415FBB /* model */ = {
 			isa = PBXGroup;
 			children = (
-				E07A3D6A14D1B41000415FBB /* Genre.h */,
-				E07A3D6B14D1B41000415FBB /* Genre.m */,
+				E04839A714E174E300F00651 /* Genre.h */,
+				E04839A814E174E300F00651 /* Genre.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 				E07A3D8914D1CA8D00415FBB /* GenreViewController.xib */,
 				E07A3D8414D1CA4000415FBB /* GenreListViewController.xib */,
 				E07A3D8E14D1D5FF00415FBB /* GenreDetailViewController.xib */,
+				E04839AC14E1767500F00651 /* GenreInfoViewController.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -322,6 +330,7 @@
 				E07A3D8614D1CA4000415FBB /* GenreListViewController.xib in Resources */,
 				E07A3D8B14D1CA8D00415FBB /* GenreViewController.xib in Resources */,
 				E07A3D9014D1D5FF00415FBB /* GenreDetailViewController.xib in Resources */,
+				E04839AE14E1767500F00651 /* GenreInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,11 +368,12 @@
 				E09EA0E314C9BE180005CF48 /* main.m in Sources */,
 				E09EA0E714C9BE180005CF48 /* CDEAppDelegate.m in Sources */,
 				E09EA0EA14C9BE180005CF48 /* CoreDataExample.xcdatamodeld in Sources */,
-				E07A3D6C14D1B41000415FBB /* Genre.m in Sources */,
 				E07A3D8514D1CA4000415FBB /* GenreListViewController.m in Sources */,
 				E07A3D8A14D1CA8D00415FBB /* GenreViewController.m in Sources */,
 				E07A3D8F14D1D5FF00415FBB /* GenreDetailViewController.m in Sources */,
 				E0281EDD14D99EE000E208EC /* NSFetchedResultsController+Util.m in Sources */,
+				E04839A914E174E300F00651 /* Genre.m in Sources */,
+				E04839AD14E1767500F00651 /* GenreInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

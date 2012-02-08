@@ -11,6 +11,7 @@
 #import "CDEAppDelegate.h"
 #import "Genre.h"
 #import "NSFetchedResultsController+Util.h"
+#import "GenreInfoViewController.h"
 
 @interface GenreListViewController (private)
 
@@ -160,15 +161,14 @@
 #pragma mark Selection and moving
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	/*
-    // Create and push a detail view controller.
-	DetailViewController *detailViewController = [[DetailViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    Book *selectedBook = (Book *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
-    // Pass the selected book to the new view controller.
-    detailViewController.book = selectedBook;
+
+	GenreInfoViewController *detailViewController = [[GenreInfoViewController alloc] initWithNibName:@"GenreInfoViewController" bundle:nil];
+
+    Genre *genre = [fetchedResultsController objectAtIndexPath:indexPath];
+    detailViewController.genre = genre;
+    detailViewController.delegate = self;
+
 	[self.navigationController pushViewController:detailViewController animated:YES];
-	[detailViewController release];
-     */
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
