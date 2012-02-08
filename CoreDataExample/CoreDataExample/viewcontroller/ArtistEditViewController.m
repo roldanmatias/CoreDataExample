@@ -61,6 +61,11 @@
     
     self.navigationItem.rightBarButtonItem = okButton;
 
+    if (self.isEditMode) {
+        self.txtName.text = self.artist.name;
+        self.txtWikiUrl.text = self.artist.wikiURL;
+        //self.txtImageUrl.text = self.artist.imgData;
+    }
 }
 
 - (void)viewDidUnload
