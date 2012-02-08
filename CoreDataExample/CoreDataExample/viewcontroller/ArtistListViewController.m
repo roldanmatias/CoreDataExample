@@ -10,6 +10,7 @@
 #import "CDEAppDelegate.h"
 #import "ArtistEditViewController.h"
 #import "Artist.h"
+#import "ArtistInfoViewController.h"
 
 @interface ArtistListViewController (private)
 
@@ -189,15 +190,14 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    /*
-	GenreInfoViewController *detailViewController = [[GenreInfoViewController alloc] initWithNibName:@"GenreInfoViewController" bundle:nil];
+
+	ArtistInfoViewController *detailViewController = [[ArtistInfoViewController alloc] initWithNibName:@"ArtistInfoViewController" bundle:nil];
     
-    Genre *genre = [fetchedResultsController objectAtIndexPath:indexPath];
-    detailViewController.genre = genre;
+    Artist *artist = [fetchedResultsController objectAtIndexPath:indexPath];
+    detailViewController.artist = artist;
     detailViewController.delegate = self;
-    
+
 	[self.navigationController pushViewController:detailViewController animated:YES];
-     */
 }
 
 #pragma mark - private methods

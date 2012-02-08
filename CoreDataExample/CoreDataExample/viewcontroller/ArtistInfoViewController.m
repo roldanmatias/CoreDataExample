@@ -7,8 +7,16 @@
 //
 
 #import "ArtistInfoViewController.h"
+#import "ArtistEditViewController.h"
+
+@interface ArtistInfoViewController (private)
+
+-(void) editArtist;
+
+@end
 
 @implementation ArtistInfoViewController
+@synthesize wvInfo, artist, delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,14 +37,39 @@
 
 #pragma mark - View lifecycle
 
+UIActivityIndicatorView *myIndicator;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title = self.artist.name;
+    
+    UIBarButtonItem *editButton = [[UIBarButtonItem alloc] 
+                                   initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
+                                   target:self 
+                                   action:@selector(editArtist)];
+    
+    self.navigationItem.rightBarButtonItem = editButton;
+    
+    self.wvInfo.delegate = self;
+    
+    NSURL *url = [NSURL URLWithString:self.artist.wikiURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+	[self.wvInfo loadRequest:requestObj];
+    
+    myIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+	myIndicator.center = CGPointMake(160, 175);
+	myIndicator.hidesWhenStopped = NO;
+    [self.view addSubview:myIndicator];
+    [myIndicator startAnimating];
 }
 
 - (void)viewDidUnload
 {
+    [self setWvInfo:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -46,6 +79,29 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+	[myIndicator stopAnimating];
+    [myIndicator removeFromSuperview];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Artist" 
+                                                    message:@"Wiki no loaded"
+                                                   delegate:nil 
+                                          cancelButtonTitle:@"Ok" 
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+-(void) editArtist {	
+    ArtistEditViewController *detail = [[ArtistEditViewController alloc] init];
+    detail.delegate = self.delegate;
+    detail.artist = self.artist;
+    detail.isEditMode = YES;
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 @end
