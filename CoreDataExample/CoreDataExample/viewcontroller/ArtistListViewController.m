@@ -228,6 +228,16 @@
 #pragma mark - delegate methods
 
 -(void) saveArtist {
+    
+    if (addingManagedObjectContext == nil) {
+        
+        NSManagedObjectContext *addingContext = [[NSManagedObjectContext alloc] init];
+        self.addingManagedObjectContext = addingContext;
+        
+        [addingManagedObjectContext setPersistentStoreCoordinator:[[fetchedResultsController managedObjectContext] persistentStoreCoordinator]];
+        
+    }
+    
     NSNotificationCenter *dnc = [NSNotificationCenter defaultCenter];
     [dnc addObserver:self selector:@selector(addControllerContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:addingManagedObjectContext];
     
