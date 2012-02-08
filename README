@@ -1,0 +1,21 @@
+
+
+Comentarios:
+
+En ArtistListViewController.m
+ Agregar un initAddingManagedObjectContext en lugar de sacarlo con casting del app delegate o quizas 
+seria mejor usar getter para addingManagedObjectContext de la misma forma que se agrego para
+fetchedResultsController.
+
+ Agregar seudonimo (nombre de acceso directo) en el synthesize siempre que se necesite posteriormente
+acceso directo. De la misma forma que esta hecho en CDEAppDelegate para las propiedades 
+managedObjectContext, etc.
+
+GenreInfoViewController.m
+ Esta genial declarar la interface GenreInfoViewController (private) pero por las dudas aclaro que 
+no es necesario escribir nada entre los parentesis y de agregar quizas sea mejor escribir algo
+identificatorio de lo que se declare adentro en lugar de la palabra private que es obvia pues de
+por si toda interface declarada en el m es privada :-)
+
+ Los delegate se acostumbran que sean assign/weak, esto es asi porque en determinados caso de uso
+comun de no ser que el delegate seria assign/weak se causaria un retain loop!!
