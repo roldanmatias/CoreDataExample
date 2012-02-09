@@ -2,6 +2,7 @@
 
 Comentarios:
 
+Dia 8 de febrero:
 En ArtistListViewController.m
  Agregar un initAddingManagedObjectContext en lugar de sacarlo con casting del app delegate o quizas 
 seria mejor usar getter para addingManagedObjectContext de la misma forma que se agrego para
@@ -19,3 +20,12 @@ por si toda interface declarada en el m es privada :-)
 
  Los delegate se acostumbran que sean assign/weak, esto es asi porque en determinados caso de uso
 comun de no ser que el delegate seria assign/weak se causaria un retain loop!!
+
+Dia 9 de febrero:
+ Los IBOutle no suelen ser assign/weak pues estan expuestos a ser liberados una ves por el niv file 
+en cualquier momento y de ahi en mas quedar como basura. 
+ Files:  ArtistEditViewController, ArtistInfoViewController, GenreDetailViewController and
+        GenreInfoViewController.
+
+ Todo lo inicializado en el mensaje vidDidLoad suele setearse con nil en el mensaje vidDidUnload.
+
