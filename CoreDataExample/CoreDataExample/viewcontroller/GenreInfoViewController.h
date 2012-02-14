@@ -12,8 +12,8 @@
 
 @interface GenreInfoViewController : UIViewController<UIWebViewDelegate>
 
-@property(nonatomic, strong) Genre *genre;
-@property (strong, nonatomic) id<GenreDelegate> delegate;
-@property (weak, nonatomic) IBOutlet UIWebView *wvInfo;
+@property (weak, nonatomic) id<GenreDelegate> delegate;
+@property (nonatomic, strong) Genre *genre;
+@property (strong, nonatomic) IBOutlet UIWebView *wvInfo;
 
 @end

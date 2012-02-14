@@ -9,7 +9,7 @@
 #import "ArtistViewController.h"
 
 @implementation ArtistViewController
-@synthesize navigationController;
+@synthesize navigationController = _navigationController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,10 +39,8 @@
 
 - (void)viewDidUnload
 {
-    [self setNavigationController:nil];
+    self.navigationController = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

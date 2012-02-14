@@ -7,6 +7,7 @@
 //
 
 #import "ArtistEditViewController.h"
+#import "Label.h"
 
 @interface ArtistEditViewController (private)
 
@@ -16,11 +17,13 @@
 @end
 
 @implementation ArtistEditViewController
-@synthesize txtName;
-@synthesize txtImageUrl;
-@synthesize txtWikiUrl;
 
-@synthesize artist, delegate, isEditMode;
+@synthesize txtName =_txtName;
+@synthesize txtImageUrl = _txtImageUrl;
+@synthesize txtWikiUrl = _txtWikiUrl;
+@synthesize artist = _artist;
+@synthesize delegate = _delegate;
+@synthesize isEditMode = _isEditMode;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -74,8 +77,6 @@
     [self setTxtImageUrl:nil];
     [self setTxtWikiUrl:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -101,6 +102,16 @@
                                               otherButtonTitles:nil];
         [alert show];
     } else {
+        
+        //Entity with Collection example
+        NSMutableArray *labelsArray = [[NSMutableArray alloc] init];
+        Label *lbl1 = [[Label alloc] init];
+        lbl1.name = @"test";
+        [labelsArray addObject:lbl1];
+        Label *lbl2 = [[Label alloc] init];
+        lbl2.name = @"test2";
+        [labelsArray addObject:lbl2];
+        self.artist.labels = labelsArray;
         
         self.artist.name = self.txtName.text;
         self.artist.wikiURL = self.txtWikiUrl.text;

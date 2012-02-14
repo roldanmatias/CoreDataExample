@@ -16,7 +16,10 @@
 @end
 
 @implementation ArtistInfoViewController
-@synthesize wvInfo, artist, delegate;
+
+@synthesize wvInfo = _wvInfo;
+@synthesize artist = _artist;
+@synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -71,8 +74,6 @@ UIActivityIndicatorView *myIndicator;
 {
     [self setWvInfo:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

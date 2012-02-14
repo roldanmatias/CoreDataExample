@@ -11,8 +11,9 @@
 #import "ArtistDelegate.h"
 
 @interface ArtistInfoViewController : UIViewController<UIWebViewDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *wvInfo;
+
+@property (assign, nonatomic) id<ArtistDelegate> delegate;
 @property(nonatomic, strong) Artist *artist;
-@property (strong, nonatomic) id<ArtistDelegate> delegate;
+@property (strong, nonatomic) IBOutlet UIWebView *wvInfo;
 
 @end

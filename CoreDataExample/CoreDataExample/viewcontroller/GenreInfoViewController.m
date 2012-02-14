@@ -18,8 +18,9 @@
 
 @implementation GenreInfoViewController
 
-@synthesize genre, delegate;
-@synthesize wvInfo;
+@synthesize genre = _genre;
+@synthesize delegate = _delegate;
+@synthesize wvInfo = _wvInfo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -72,7 +73,7 @@ UIActivityIndicatorView *myIndicator;
 - (void)viewDidUnload
 {
     self.genre = nil;
-    [self setWvInfo:nil];
+    self.wvInfo = nil;
     [super viewDidUnload];
 }
 

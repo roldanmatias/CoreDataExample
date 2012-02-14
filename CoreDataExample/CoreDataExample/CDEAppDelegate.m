@@ -134,7 +134,7 @@
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CoreDataExample.sqlite"];
     
-    NSLog(@"adasdas %@", storeURL.path);
+    NSLog(@"SQLite Path: %@", storeURL.path);
     
     
     NSError *error = nil;

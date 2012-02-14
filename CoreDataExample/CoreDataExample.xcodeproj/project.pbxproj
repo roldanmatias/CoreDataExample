@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01BEC1B14E460B000CBAB5B /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = E01BEC1A14E460B000CBAB5B /* Label.m */; };
 		E0281EDD14D99EE000E208EC /* NSFetchedResultsController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E0281EDC14D99EE000E208EC /* NSFetchedResultsController+Util.m */; };
+		E0439FB014E4519A0066CC74 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = E0439FAF14E4519A0066CC74 /* Artist.m */; };
 		E04839A914E174E300F00651 /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = E04839A814E174E300F00651 /* Genre.m */; };
 		E04839AD14E1767500F00651 /* GenreInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04839AB14E1767500F00651 /* GenreInfoViewController.m */; };
 		E04839AE14E1767500F00651 /* GenreInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E04839AC14E1767500F00651 /* GenreInfoViewController.xib */; };
@@ -38,7 +40,6 @@
 		E0AE018714E2BF8D0095F9DF /* ArtistListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AE018514E2BF8D0095F9DF /* ArtistListViewController.xib */; };
 		E0AE018B14E2C17A0095F9DF /* ArtistEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE018914E2C1790095F9DF /* ArtistEditViewController.m */; };
 		E0AE018C14E2C17A0095F9DF /* ArtistEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AE018A14E2C1790095F9DF /* ArtistEditViewController.xib */; };
-		E0AE01B114E2D0890095F9DF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE01B014E2D0890095F9DF /* Artist.m */; };
 		E0AE01B514E2DCCA0095F9DF /* ArtistInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE01B314E2DCC80095F9DF /* ArtistInfoViewController.m */; };
 		E0AE01B614E2DCCA0095F9DF /* ArtistInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AE01B414E2DCC90095F9DF /* ArtistInfoViewController.xib */; };
 /* End PBXBuildFile section */
@@ -54,8 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E01BEC1914E460B000CBAB5B /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Label.h; path = model/Label.h; sourceTree = "<group>"; };
+		E01BEC1A14E460B000CBAB5B /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Label.m; path = model/Label.m; sourceTree = "<group>"; };
 		E0281EDB14D99EE000E208EC /* NSFetchedResultsController+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFetchedResultsController+Util.h"; path = "category/NSFetchedResultsController+Util.h"; sourceTree = "<group>"; };
 		E0281EDC14D99EE000E208EC /* NSFetchedResultsController+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFetchedResultsController+Util.m"; path = "category/NSFetchedResultsController+Util.m"; sourceTree = "<group>"; };
+		E0439FAE14E4519A0066CC74 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Artist.h; path = model/Artist.h; sourceTree = "<group>"; };
+		E0439FAF14E4519A0066CC74 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Artist.m; path = model/Artist.m; sourceTree = "<group>"; };
 		E04839A714E174E300F00651 /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genre.h; path = model/Genre.h; sourceTree = "<group>"; };
 		E04839A814E174E300F00651 /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Genre.m; path = model/Genre.m; sourceTree = "<group>"; };
 		E04839AA14E1767500F00651 /* GenreInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenreInfoViewController.h; path = viewcontroller/GenreInfoViewController.h; sourceTree = "<group>"; };
@@ -100,8 +105,6 @@
 		E0AE018914E2C1790095F9DF /* ArtistEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistEditViewController.m; path = viewcontroller/ArtistEditViewController.m; sourceTree = "<group>"; };
 		E0AE018A14E2C1790095F9DF /* ArtistEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistEditViewController.xib; path = viewcontroller/ArtistEditViewController.xib; sourceTree = "<group>"; };
 		E0AE01A514E2C9370095F9DF /* ArtistDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistDelegate.h; path = protocol/ArtistDelegate.h; sourceTree = "<group>"; };
-		E0AE01AF14E2D0880095F9DF /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Artist.h; path = model/Artist.h; sourceTree = "<group>"; };
-		E0AE01B014E2D0890095F9DF /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Artist.m; path = model/Artist.m; sourceTree = "<group>"; };
 		E0AE01B214E2DCC70095F9DF /* ArtistInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistInfoViewController.h; path = viewcontroller/ArtistInfoViewController.h; sourceTree = "<group>"; };
 		E0AE01B314E2DCC80095F9DF /* ArtistInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistInfoViewController.m; path = viewcontroller/ArtistInfoViewController.m; sourceTree = "<group>"; };
 		E0AE01B414E2DCC90095F9DF /* ArtistInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistInfoViewController.xib; path = viewcontroller/ArtistInfoViewController.xib; sourceTree = "<group>"; };
@@ -174,21 +177,16 @@
 			name = viewcontroller;
 			sourceTree = "<group>";
 		};
-		E07A3D6014D19A6C00415FBB /* datamodel */ = {
-			isa = PBXGroup;
-			children = (
-				E09EA0E814C9BE180005CF48 /* CoreDataExample.xcdatamodeld */,
-			);
-			name = datamodel;
-			sourceTree = "<group>";
-		};
 		E07A3D6914D19FD800415FBB /* model */ = {
 			isa = PBXGroup;
 			children = (
-				E0AE01AF14E2D0880095F9DF /* Artist.h */,
-				E0AE01B014E2D0890095F9DF /* Artist.m */,
+				E09EA0E814C9BE180005CF48 /* CoreDataExample.xcdatamodeld */,
+				E0439FAE14E4519A0066CC74 /* Artist.h */,
+				E0439FAF14E4519A0066CC74 /* Artist.m */,
 				E04839A714E174E300F00651 /* Genre.h */,
 				E04839A814E174E300F00651 /* Genre.m */,
+				E01BEC1914E460B000CBAB5B /* Label.h */,
+				E01BEC1A14E460B000CBAB5B /* Label.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -257,7 +255,6 @@
 				E07A3D6D14D1B57600415FBB /* view */,
 				E07A3D5D14D19A0B00415FBB /* delegate */,
 				E07A3D5F14D19A3D00415FBB /* viewcontroller */,
-				E07A3D6014D19A6C00415FBB /* datamodel */,
 				E07A3D6914D19FD800415FBB /* model */,
 				E09EA0DD14C9BE180005CF48 /* Supporting Files */,
 			);
@@ -420,8 +417,9 @@
 				E0AE018014E2BE230095F9DF /* ArtistViewController.m in Sources */,
 				E0AE018614E2BF8D0095F9DF /* ArtistListViewController.m in Sources */,
 				E0AE018B14E2C17A0095F9DF /* ArtistEditViewController.m in Sources */,
-				E0AE01B114E2D0890095F9DF /* Artist.m in Sources */,
 				E0AE01B514E2DCCA0095F9DF /* ArtistInfoViewController.m in Sources */,
+				E0439FB014E4519A0066CC74 /* Artist.m in Sources */,
+				E01BEC1B14E460B000CBAB5B /* Label.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

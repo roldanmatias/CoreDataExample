@@ -12,10 +12,10 @@
 
 @interface GenreDetailViewController : UIViewController
 
-@property (strong, nonatomic) Genre *genre;
-@property (strong, nonatomic) id<GenreDelegate> delegate;
+@property (weak, nonatomic) id<GenreDelegate> delegate;
 @property (nonatomic) BOOL isEditMode;
+@property (strong, nonatomic) Genre *genre;
 @property (strong, nonatomic) IBOutlet UITextField *txtName;
-@property (weak, nonatomic) IBOutlet UITextField *txtWikiURL;
+@property (strong, nonatomic) IBOutlet UITextField *txtWikiURL;
 
 @end

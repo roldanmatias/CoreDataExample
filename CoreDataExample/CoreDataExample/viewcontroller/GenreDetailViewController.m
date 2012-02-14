@@ -18,11 +18,11 @@
 
 @implementation GenreDetailViewController
 
-@synthesize txtName;
-@synthesize txtWikiURL;
-@synthesize isEditMode;
-@synthesize delegate;
-@synthesize genre;
+@synthesize txtName = _txtName;
+@synthesize txtWikiURL = _txtWikiURL;
+@synthesize isEditMode = _isEditMode;
+@synthesize delegate = _delegate;
+@synthesize genre = _genre;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -73,10 +73,9 @@
 
 - (void)viewDidUnload
 {
-    [self setTxtWikiURL:nil];
+    self.txtName = nil;
+    self.txtWikiURL = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

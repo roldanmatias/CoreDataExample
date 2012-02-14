@@ -23,7 +23,9 @@
 
 @implementation GenreListViewController
 
-@synthesize fetchedResultsController, managedObjectContext, addingManagedObjectContext;
+@synthesize fetchedResultsController = _fetchedResultsController;
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize addingManagedObjectContext = _addingManagedObjectContext;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -71,6 +73,9 @@
 
 - (void)viewDidUnload
 {
+    self.fetchedResultsController = nil;
+    self.managedObjectContext = nil;
+    self.addingManagedObjectContext = nil;
     [super viewDidUnload];
 }
 
@@ -106,13 +111,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return [[fetchedResultsController sections] count];
+    return [[self.fetchedResultsController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
 	return [sectionInfo numberOfObjects];
 }
 
@@ -132,7 +137,7 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
 	
-	Genre *genre = [fetchedResultsController objectAtIndexPath:indexPath];
+	Genre *genre = [self.fetchedResultsController objectAtIndexPath:indexPath];
 	cell.textLabel.text = genre.name;
 }
 
@@ -144,8 +149,8 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
 		
 		// Delete the managed object.
-		NSManagedObjectContext *context = [fetchedResultsController managedObjectContext];
-		[context deleteObject:[fetchedResultsController objectAtIndexPath:indexPath]];
+		NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
+		[context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
 		
 		NSError *error;
 		if (![context save:&error]) {
@@ -164,7 +169,7 @@
 
 	GenreInfoViewController *detailViewController = [[GenreInfoViewController alloc] initWithNibName:@"GenreInfoViewController" bundle:nil];
 
-    Genre *genre = [fetchedResultsController objectAtIndexPath:indexPath];
+    Genre *genre = [self.fetchedResultsController objectAtIndexPath:indexPath];
     detailViewController.genre = genre;
     detailViewController.delegate = self;
 
@@ -184,7 +189,7 @@
 	NSManagedObjectContext *addingContext = [[NSManagedObjectContext alloc] init];
 	self.addingManagedObjectContext = addingContext;
 	
-	[addingManagedObjectContext setPersistentStoreCoordinator:[[fetchedResultsController managedObjectContext] persistentStoreCoordinator]];
+	[self.addingManagedObjectContext setPersistentStoreCoordinator:[[self.fetchedResultsController managedObjectContext] persistentStoreCoordinator]];
     
 	Genre *genre = (Genre *)[NSEntityDescription insertNewObjectForEntityForName:@"Genre" inManagedObjectContext:addingContext];
 	
@@ -195,7 +200,7 @@
 }
 
 -(BOOL) existGenre:(Genre *)g {
-    return [fetchedResultsController existGenre:g];
+    return [self.fetchedResultsController existGenre:g];
 }
 
 -(void) cancelGenre {
@@ -204,25 +209,24 @@
 
 -(void) saveGenre {
 
-    if (addingManagedObjectContext == nil) {
+    if (self.addingManagedObjectContext == nil) {
 
         NSManagedObjectContext *addingContext = [[NSManagedObjectContext alloc] init];
         self.addingManagedObjectContext = addingContext;
         
-        [addingManagedObjectContext setPersistentStoreCoordinator:[[fetchedResultsController managedObjectContext] persistentStoreCoordinator]];
-
+        [self.addingManagedObjectContext setPersistentStoreCoordinator:[[self.fetchedResultsController managedObjectContext] persistentStoreCoordinator]];
     }
     
     NSNotificationCenter *dnc = [NSNotificationCenter defaultCenter];
-    [dnc addObserver:self selector:@selector(addControllerContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:addingManagedObjectContext];
+    [dnc addObserver:self selector:@selector(addControllerContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:self.addingManagedObjectContext];
     
     NSError *error;
-    if (![addingManagedObjectContext save:&error]) {
+    if (![self.addingManagedObjectContext save:&error]) {
         // Update to handle the error appropriately.
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         exit(-1);
     }
-    [dnc removeObserver:self name:NSManagedObjectContextDidSaveNotification object:addingManagedObjectContext];
+    [dnc removeObserver:self name:NSManagedObjectContextDidSaveNotification object:self.addingManagedObjectContext];
 
     // Release the adding managed object context.
     self.addingManagedObjectContext = nil;    
@@ -230,13 +234,13 @@
 
 - (NSFetchedResultsController *)fetchedResultsController {
     
-    if (fetchedResultsController != nil) {
-        return fetchedResultsController;
+    if (_fetchedResultsController != nil) {
+        return _fetchedResultsController;
     }
     
 	// Create and configure a fetch request with the Book entity.
 	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Genre" inManagedObjectContext:managedObjectContext];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Genre" inManagedObjectContext:self.managedObjectContext];
 	[fetchRequest setEntity:entity];
 	
 	// Create the sort descriptors array.
@@ -246,12 +250,12 @@
 	[fetchRequest setSortDescriptors:sortDescriptors];
     
 	// Create and initialize the fetch results controller.
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"name" cacheName:@"Root"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"name" cacheName:@"Root"];
     
 	self.fetchedResultsController = aFetchedResultsController;
-	fetchedResultsController.delegate = self;
+	self.fetchedResultsController.delegate = self;
 	
-	return fetchedResultsController;
+	return _fetchedResultsController;
 }
 
 /**
@@ -309,7 +313,7 @@
 
 - (void)addControllerContextDidSave:(NSNotification*)saveNotification {
 	
-	NSManagedObjectContext *context = [fetchedResultsController managedObjectContext];
+	NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
 	// Merging chang¡es causes the fetched results controller to update its results
 	[context mergeChangesFromContextDidSaveNotification:saveNotification];	
 }

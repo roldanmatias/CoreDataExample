@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ArtistViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UINavigationController *navigationController;
 
 @end
