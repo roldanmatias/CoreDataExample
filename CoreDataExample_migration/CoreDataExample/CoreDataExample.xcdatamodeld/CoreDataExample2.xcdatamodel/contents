@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K540" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Album" representedClassName="Album" syncable="YES">
+        <attribute name="albumDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="albumID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="test" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Artist" representedClassName="Artist" syncable="YES">
+        <attribute name="artistID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imgData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="labels" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wikiURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="genre" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Genre" syncable="YES"/>
+    </entity>
+    <entity name="Genre" representedClassName="Genre" syncable="YES">
+        <attribute name="genreID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wikiURL" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Track" syncable="YES">
+        <attribute name="bpm" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trackID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Album" positionX="79" positionY="189" width="128" height="120"/>
+        <element name="Artist" positionX="79" positionY="99" width="128" height="150"/>
+        <element name="Genre" positionX="79" positionY="0" width="128" height="90"/>
+        <element name="Track" positionX="81" positionY="279" width="128" height="105"/>
+    </elements>
+</model>

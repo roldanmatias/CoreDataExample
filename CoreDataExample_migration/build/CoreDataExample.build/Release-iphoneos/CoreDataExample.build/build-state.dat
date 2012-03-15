@@ -1,0 +1,336 @@
+TCoreDataExample
+v4
+r1
+cCheck dependencies
+cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Release-iphoneos/CoreDataExample.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/Info.plist CoreDataExample/CoreDataExample-Info.plist
+cDataModelVersionCompile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample.momd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample.xcdatamodeld
+cProcessPCH /var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch.pth CoreDataExample/CoreDataExample-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/main.o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CDEAppDelegate.o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CDEAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/HomeViewController.o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample normal armv7
+cGenerateDSYMFile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app.dSYM /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample
+cCopyStringsFile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/en.lproj/InfoPlist.strings CoreDataExample/en.lproj/InfoPlist.strings
+cCompileXIB /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.xib
+cProcessProductPackaging "/Users/mroldan/Library/MobileDevice/Provisioning Profiles/3399466C-A18F-491F-A7B9-066BC3B30B4A.mobileprovision" /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/mroldan/Library/MobileDevice/Provisioning Profiles/3399466C-A18F-491F-A7B9-066BC3B30B4A.mobileprovision" /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovision
+cTouch /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcent
+cCodeSign /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+cValidate /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk
+c000000004E7840290000000000000110
+t1316503593
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+c000000004E5C595800000000000001A7
+t1314675032
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+c000000004E5C595800000000000001E5
+t1314675032
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004E72F3A400000000002566C0
+t1316156324
+s2451136
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004E72F28700000000003AB0A0
+t1316156039
+s3846304
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004E72F3440000000000529540
+t1316156228
+s5412160
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004E7808C7000000000078BE50
+t1316489415
+s7913040
+
+N/Users/mroldan/Library/MobileDevice/Provisioning Profiles/3399466C-A18F-491F-A7B9-066BC3B30B4A.mobileprovision
+c000000004F1DC4F10000000000001D7B
+t1327351025
+s7547
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CDEAppDelegate.m
+c000000004F1DBD540000000000001C6C
+t1327349076
+s7276
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample-Prefix.pch
+c000000004F1DBD54000000000000016F
+t1327349076
+s367
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample.xcdatamodeld
+c000000004F1DBD540000000000000088
+t1327349076
+s136
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/en.lproj/InfoPlist.strings
+c000000004F1DBD54000000000000002D
+t1327349076
+s45
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/main.m
+c000000004F1DBD540000000000000166
+t1327349076
+s358
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.m
+c000000004F1DBD54000000000000048B
+t1327349076
+s1163
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.xib
+c000000004F1DBD540000000000001B4E
+t1327349076
+s6990
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcent
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CDEAppDelegate.o
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CoreDataExample.LinkFileList
+c000000004F2062DB00000000000001F5
+t1327522523
+s501
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/HomeViewController.o
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app.dSYM
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample.momd
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/HomeViewController.nib
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/Info.plist
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/PkgInfo
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/ResourceRules.plist
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch.pth
+t2
+s0
+
+NCoreDataExample/CoreDataExample-Info.plist
+c000000004F1DBD5400000000000004C0
+t1327349076
+s1216
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesc1aa765b9ad0b441^4338c25b9ad0b441^---0#1#0#--18"Check dependencies36"F8A99A43-AE45-409F-9E4A-B927F6BE3B5B-
+
+CCodeSign /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+s349215326.015275
+e349215326.169898
+r1
+xCodeSign
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"CodeSign build/Release-iphoneos/CoreDataExample.appa0fe035e9ad0b441^ed802b5e9ad0b441^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/0000000000000000^891"CodeSign build/Release-iphoneos/CoreDataExample.app    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /usr/bin/codesign --force --sign "iPhone Distribution: Matias Roldan" --resource-rules=/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/ResourceRules.plist --entitlements /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcent /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app36"2375A727-CBB4-4240-B2FC-63E82C5BBB6B-
+
+CCompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CDEAppDelegate.o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CDEAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349215324.336281
+e349215324.487780
+r1
+xCompileC
+xbuild/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CDEAppDelegate.o
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CDEAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CDEAppDelegate.md23a565c9ad0b441^e31c7d5c9ad0b441^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CDEAppDelegate.m0000000000000000^3087"CompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CDEAppDelegate.o CoreDataExample/CDEAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -fvisibility=hidden -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-generated-files.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-own-target-headers.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-all-target-headers.hmap -iquote /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-project-headers.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/include -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/DerivedSources/armv7 -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/DerivedSources -F/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch -MMD -MT dependencies -MF /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CDEAppDelegate.d -c /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CDEAppDelegate.m -o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CDEAppDelegate.o36"2CC87F42-6F03-4C4F-9CB0-EE0184F529BA-
+
+CCompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/HomeViewController.o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349215324.400153
+e349215324.514115
+r1
+xCompileC
+xbuild/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/HomeViewController.o
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Compile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.m1d92665c9ad0b441^0a9d835c9ad0b441^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.m0000000000000000^3137"CompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/HomeViewController.o CoreDataExample/viewcontroller/HomeViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -fvisibility=hidden -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-generated-files.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-own-target-headers.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-all-target-headers.hmap -iquote /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-project-headers.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/include -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/DerivedSources/armv7 -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/DerivedSources -F/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch -MMD -MT dependencies -MF /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/HomeViewController.d -c /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.m -o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/HomeViewController.o36"11370B01-D28D-4A7E-AFF4-6AD28FD8C4B7-
+
+CCompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/main.o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349215324.336275
+e349215324.398750
+r1
+xCompileC
+xbuild/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/main.o
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/main.m2a36565c9ad0b441^4b1f665c9ad0b441^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/main.m0000000000000000^3037"CompileC build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/main.o CoreDataExample/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -fvisibility=hidden -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-generated-files.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-own-target-headers.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-all-target-headers.hmap -iquote /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-project-headers.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/include -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/DerivedSources/armv7 -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/DerivedSources -F/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch -MMD -MT dependencies -MF /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/main.d -c /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/main.m -o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/main.o36"897F5134-E0EE-4B2A-A9BD-E6102D0428A7-
+
+CCompileXIB /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.xib
+s349215324.581433
+e349215325.959975
+r1
+xCompileXIB
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Compiling /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.xibe2ea945c9ad0b441^8cf5f55d9ad0b441^-84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)-0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.xib0000000000000000^844"CompileXIB CoreDataExample/viewcontroller/HomeViewController.xib    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/HomeViewController.nib /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/viewcontroller/HomeViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"F525445C-A53B-4B8F-BF63-D429073A2C4B-
+
+CCopyStringsFile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/en.lproj/InfoPlist.strings CoreDataExample/en.lproj/InfoPlist.strings
+s349215324.581194
+e349215324.584724
+r1
+xCopyStringsFile
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/en.lproj/InfoPlist.strings
+xCoreDataExample/en.lproj/InfoPlist.strings
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy CoreDataExample/en.lproj/InfoPlist.strings93e5945c9ad0b441^39b7955c9ad0b441^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/en.lproj/InfoPlist.strings0000000000000000^623"CopyStringsFile build/Release-iphoneos/CoreDataExample.app/en.lproj/InfoPlist.strings CoreDataExample/en.lproj/InfoPlist.strings    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/en.lproj -- CoreDataExample/en.lproj/InfoPlist.strings36"BFA8EBBC-FB4C-4162-B349-F6B3295ED735-
+
+CCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Release-iphoneos/CoreDataExample.app/ResourceRules.plist
+s349215323.767386
+e349215323.771864
+r1
+xCpResource
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+xbuild/Release-iphoneos/CoreDataExample.app/ResourceRules.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy build/Release-iphoneos/CoreDataExample.app/ResourceRules.plist1f9fc45b9ad0b441^33a9c55b9ad0b441^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/ResourceRules.plistd98b54195b59d843^736"CpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Release-iphoneos/CoreDataExample.app/ResourceRules.plist    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app36"288DC8D7-84A8-4269-B639-A4E36E2D96D3-
+
+CDataModelVersionCompile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample.momd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample.xcdatamodeld
+s349215323.775731
+e349215324.033768
+r1
+xDataModelVersionCompile
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample.momd
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample.xcdatamodeld
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"DataModelVersionCompile build/Release-iphoneos/CoreDataExample.app/CoreDataExample.momd CoreDataExample/CoreDataExample.xcdatamodeldccb7c65b9ad0b441^2bc3085c9ad0b441^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample.xcdatamodeld/0000000000000000^784"DataModelVersionCompile build/Release-iphoneos/CoreDataExample.app/CoreDataExample.momd CoreDataExample/CoreDataExample.xcdatamodeld    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -MOMC_PLATFORMS iphonesimulator -MOMC_PLATFORMS iphoneos /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample.xcdatamodeld /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample.momd36"73BB07B8-267D-4B2F-8AFE-674A0A7BA775-
+
+CGenerateDSYMFile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app.dSYM /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample
+s349215324.558094
+e349215324.578204
+r1
+xGenerateDSYMFile
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app.dSYM
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Generating /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app.dSYM6bf48e5c9ad0b441^4b06945c9ad0b441^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app.dSYM00f81845dcffdf42^636"GenerateDSYMFile build/Release-iphoneos/CoreDataExample.app.dSYM build/Release-iphoneos/CoreDataExample.app/CoreDataExample    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /Developer/usr/bin/dsymutil /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample -o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app.dSYM36"FE13671F-58B3-4B7A-A28A-2E5705DB7198-
+
+CLd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample normal armv7
+s349215324.515937
+e349215324.556267
+r1
+xLd
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample
+xnormal
+xarmv7
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Link /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample832f845c9ad0b441^2b688e5c9ad0b441^---0#0#0#--1146"Ld build/Release-iphoneos/CoreDataExample.app/CoreDataExample normal armv7    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos -F/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos -filelist /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/Objects-normal/armv7/CoreDataExample.LinkFileList -dead_strip -fobjc-arc -miphoneos-version-min=5.0 -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreData -o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/CoreDataExample36"524E1DD3-0473-4ACF-8793-B47F6CA72208-
+
+CProcessInfoPlistFile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/Info.plist CoreDataExample/CoreDataExample-Info.plist
+s349215323.767490
+e349215323.771857
+r1
+xProcessInfoPlistFile
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/Info.plist
+xCoreDataExample/CoreDataExample-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Process CoreDataExample/CoreDataExample-Info.plistff92c45b9ad0b441^49a0c55b9ad0b441^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample-Info.plist0000000000000000^881"ProcessInfoPlistFile build/Release-iphoneos/CoreDataExample.app/Info.plist CoreDataExample/CoreDataExample-Info.plist    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    builtin-infoPlistUtility CoreDataExample/CoreDataExample-Info.plist -genpkginfo /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/ResourceRules.plist -o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/Info.plist36"CD015FF9-FB18-41F1-A43A-D80FEA20AEB5-
+
+CProcessPCH /var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch.pth CoreDataExample/CoreDataExample-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349215323.775885
+e349215324.334444
+r1
+xProcessPCH
+x/var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch.pth
+xCoreDataExample/CoreDataExample-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Precompile CoreDataExample/CoreDataExample-Prefix.pch28bac65b9ad0b441^0e9e555c9ad0b441^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample-Prefix.pch0000000000000000^3028"ProcessPCH /var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch.pth CoreDataExample/CoreDataExample-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -fvisibility=hidden -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-generated-files.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-own-target-headers.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-all-target-headers.hmap -iquote /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample-project-headers.hmap -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/include -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/DerivedSources/armv7 -I/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/DerivedSources -F/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -c /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/CoreDataExample/CoreDataExample-Prefix.pch -o /var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/Gn/GnvoCkkZH2CdT8R1nXSRc++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/CoreDataExample-Prefix-frxjzphspoqpmkbzygaydzxvuoao/CoreDataExample-Prefix.pch.d36"30051BC2-BE0E-412C-A04D-3B2B2280BA41-
+
+CProcessProductPackaging "/Users/mroldan/Library/MobileDevice/Provisioning Profiles/3399466C-A18F-491F-A7B9-066BC3B30B4A.mobileprovision" /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovision
+s349215325.969713
+e349215325.972784
+r1
+xProcessProductPackaging
+x/Users/mroldan/Library/MobileDevice/Provisioning Profiles/3399466C-A18F-491F-A7B9-066BC3B30B4A.mobileprovision
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovision
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection204"ProcessProductPackaging "/Users/mroldan/Library/MobileDevice/Provisioning Profiles/3399466C-A18F-491F-A7B9-066BC3B30B4A.mobileprovision" build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovisionef54f85d9ad0b441^ea07f95d9ad0b441^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovision0000000000000000^731"ProcessProductPackaging "/Users/mroldan/Library/MobileDevice/Provisioning Profiles/3399466C-A18F-491F-A7B9-066BC3B30B4A.mobileprovision" build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovision    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    builtin-productPackagingUtility "/Users/mroldan/Library/MobileDevice/Provisioning Profiles/3399466C-A18F-491F-A7B9-066BC3B30B4A.mobileprovision" -o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/embedded.mobileprovision36"13C708EB-2186-4A7D-9176-8CB7D9E5C786-
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcent
+s349215325.986809
+e349215326.012124
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcent
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection201"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcente9b6fc5d9ad0b441^2a1a035e9ad0b441^---0#0#0#-19%DVTDocumentLocation2@168"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcent00f81845dcffdf42^751"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcent    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    builtin-productPackagingUtility /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/CoreDataExample.build/Release-iphoneos/CoreDataExample.build/CoreDataExample.xcent36"E94D4ECE-3097-4991-ADB5-B6151BE766DF-
+
+CTouch /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+s349215325.976294
+e349215325.983279
+r1
+xTouch
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Touch /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app7e00fa5d9ad0b441^0fb7fb5d9ad0b441^---0#0#0#--420"Touch build/Release-iphoneos/CoreDataExample.app    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    /usr/bin/touch -c /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app36"11D0BE8B-3ABE-458F-A36E-806DB5E0D4E3-
+
+CValidate /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+s349215326.173076
+e349215326.351683
+r1
+xValidate
+x/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app
+owarning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)
+oUnable to validate your application. - (null)
+o
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Validate build/Release-iphoneos/CoreDataExample.app9d632c5e9ad0b441^d7125a5e9ad0b441^-258"warning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)Unable to validate your application. - (null)1(21%IDEActivityLogMessage2@202" iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)192"IPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57349215326#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@123"file://localhost/Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app/0000000000000000^532"Validate build/Release-iphoneos/CoreDataExample.app    cd /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/mroldan/workspace/github/CoreDataExample/CoreDataExample/build/Release-iphoneos/CoreDataExample.app36"DAD4961B-C428-4966-9051-3F54978AB00E-
+
