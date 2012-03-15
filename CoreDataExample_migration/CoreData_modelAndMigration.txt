@@ -1,0 +1,138 @@
+
+Mapping Model Objects
+---------------------------
+
+If you change your model, you therefore need to change the data in existing stores to new version—changing the store format is known as migration.
+To migrate a store, you need both the version of the model used to create it, and the current version of the model you want to migrate to. You can create a versioned model that contains more than one version of a managed object model. Within the versioned model you mark one version as being the current version. Core Data can then use this model to open persistent stores created using any of the model versions, and migrate the stores to the current version. To help Core Data perform the migration, though, you may have to provide information about how to map from one version of the model to another. This information may be in the form of hints within the versioned model itself, or in a separate mapping model file that you create.
+
+* Model versioning allows you to specify and distinguish between different configurations of your schema.
+
+* Core Data needs to know how to map from the entities and properties in a source model to the entities and properties in the destination model.
+A mapping model parallels a managed object model, specifying how to transform objects in the source into instances appropriate for the destination.
+
+* Data migration allows you to convert data from one model (schema) to another, using mappings.
+
+* If you are using iCloud, there are some constraints on what migration you can perform.
+
+Core Data’s perspective on versioning is that it is only interested in features of the model that affect persistence. This means that for two models to be compatible:
+
+For each entity the following attributes must be equal: name, parent, isAbstract, and properties.
+className, userInfo, and validation predicates are not compared.
+
+For each property in each entity, the following attributes must be equal: name, isOptional, isTransient, isReadOnly, for attributes attributeType, and for relationships destinationEntity, minCount, maxCount, deleteRule, and inverseRelationship.
+userInfo and validation predicates are not compared.
+
+Core Data creates a 32-byte hash digest of the components which it compares for equality. These hashes are included in a store’s metadata so that Core Data can quickly determine whether the store format matches that of the managed object model it may use to try to open the store. 
+If you wanted to force Core Data to recognize that “Version 1.0” (Figure 1-1) and “Version 1.1” (Figure 1-2) of your models are different, you could set an entity modifier for the Recipe entity in the second model to change the version hash Core Data creates.
+
+
+Model File Format and Versions
+-------------------------------------
+
+A managed object model that supports versioning is represented in the filesystem by a .xcdatamodeld document. An .xcdatamodeld document is a file package (see “Document Packages”) that groups versions of the model, each represented by an individual .xcdatamodel file, and an Info.plist file that contains the version information.
+
+
+Lightweight Migration
+--------------------------
+
+If you just make simple changes to your model (such as adding a new attribute to an entity), Core Data can perform automatic data migration, referred to as lightweight migration. Lightweight migration is fundamentally the same as ordinary migration, except that instead of you providing a mapping model (as described in “Mapping Overview”), Core Data infers one from differences between the source and destination managed object models.
+
+A further advantage of using lightweight migration—beyond the fact that you don’t need to create the mapping model yourself—is that if you use an inferred model and you use the SQLite store, then Core Data can perform the migration in situ.
+
+A further advantage of using lightweight migration—beyond the fact that you don’t need to create the mapping model yourself—is that if you use an inferred model and you use the SQLite store, then Core Data can perform the migration in situ (solely by issuing SQL statements). This can represent a significant performance benefit as Core Data doesn’t have to load any of your data. Because of this, you are encouraged to use inferred migration where possible, even if the mapping model you might create yourself would be trivial.
+
+Core Data Must Be Able to Infer the Mapping
+
+To perform automatic lightweight migration, Core Data needs to be able to find the source and destination managed object models itself at runtime. 
+
+For Core Data to be able to generate an inferred mapping model, changes must fit an obvious migration pattern, for example:
+
+Simple addition of a new attribute
+Removal of an attribute
+A non-optional attribute becoming optional
+An optional attribute becoming non-optional, and defining a default value
+Renaming an entity or property
+
+In addition, Core Data supports:
+
+Adding relationships and changing the type of relationship
+You can add a new relationship or delete an existing relationship.
+Renaming a relationship (by using a renaming identifier, just like an attribute)
+Changing a relationship from a to-one to a to-many, or a non-ordered to-many to ordered (and visa-versa)
+Changing the entity hierarchy
+You can add, remove, rename entities
+You can create a new parent or child entity and move properties up and down the entity hierarchy
+You can move entities out of a hierarchy
+You cannot, however, merge entity hierarchies; if two existing entities do not share a common parent in the source, they cannot share a common parent in the destination
+
+
+Request Automatic Migration Using an Options Dictionary
+
+You request automatic lightweight migration using the options dictionary you pass in addPersistentStoreWithType:configuration:URL:options:error:, by setting values corresponding to both the NSMigratePersistentStoresAutomaticallyOption and the NSInferMappingModelAutomaticallyOption keys to YES:
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+	
+    if (persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+	
+    NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"Locations.sqlite"]];
+	
+	NSError *error = nil;
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
+
+	// Allow inferred migration from the original version of the application.
+	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+							 [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
+							 [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+	
+	if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:options error:&error]) {
+        // Handle the error.
+    }    
+	
+    return persistentStoreCoordinator;
+}
+
+
+
+Mapping Overview
+---------------------
+
+If Core Data cannot infer the mapping from one model to another, you need a definition of how to perform the transformation. This information is captured in a mapping model.
+
+A mapping model is a collection of objects that specifies the transformations that are required to migrate part of a store from one version of your model to another (for example, that one entity is renamed, an attribute is added to another, and a third split into two)
+
+* An instance of NSEntityMapping specifies a source entity, a destination entity (the type of object to create to correspond to the source object) and mapping type (add, remove, copy as is, or transform).
+
+* An instance of NSPropertyMapping specifies the name of the property in the source and in the destination entity, and a value expression to create the value for the destination property.
+
+
+You can handle simple property migration changes by configuring a custom value expression on a property mapping directly in the mapping model editor in Xcode. For example, you can:
+
+Migrate data from one attribute to another.
+To rename amount to totalCost, enter the custom value expression for the totalCost property mapping as $source.amount.
+
+Apply a value transformation on a property.
+To convert temperature from Fahrenheit to Celsius, use the custom value expression ($source.temperature - 32.0) / 1.8.
+
+Migrate objects from one relationship to another.
+To rename trades to transactions, enter the custom value expression for the transactions property mapping as FUNCTION($manager, "destinationInstancesForEntityMappingNamed:sourceInstances:", "TradeToTrade", $source.trades). (This assumes the entity mapping that migrates Trade instances is named TradeToTrade.)
+
+
+There are six predefined keys you can reference in custom value expressions:
+
+NSMigrationManagerKey: $manager
+
+NSMigrationSourceObjectKey: $source
+
+NSMigrationDestinationObjectKey: $destination
+
+NSMigrationEntityMappingKey: $entityMapping
+
+NSMigrationPropertyMappingKey: $propertyMapping
+
+NSMigrationEntityPolicyKey: $entityPolicy
+
+
+
+
